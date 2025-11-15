@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #333;
+}
+
+.project-container {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 25px;
+}
+
+.project-section {
+    background: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 16px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.project-section:hover {
+    transform: translateY(-4px);
+}
+
+.project-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.10);
+}
+
+.project-desc {
+    font-size: 1.05rem;
+    line-height: 1.7rem;
+    color: #475569;
+    margin-bottom: 2rem;
+}
+
+/* Teknologi & Fitur menjadi 2 kolom */
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-info div {
+    flex: 1;
+    min-width: 230px;
+}
+
+.project-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: .8rem;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.project-info ul {
+    margin-left: 1rem;
+    line-height: 1.6rem;
+    color: #334155;
+}
+
+/* Tombol */
+.back-btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(37,99,235,0.3);
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+}
+</style
+</head>
+
+<body>
+
+    <div class="project-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-section">
+            <h1 class="project-title">E-Tata Tertib – Monitoring Pelanggaran Siswa</h1>
+            <img src="assets/img/details1.jpeg" class="project-img" alt="">
+            <p class="project-desc">
+                Sistem monitoring disiplin siswa berbasis web yang menampilkan grafik, statistik, 
+                dan laporan pelanggaran secara real-time. Dibuat untuk mempermudah sekolah 
+                dalam pengelolaan data pelanggaran siswa.
+            </p>
+
+            <div class="project-info">
+                <h3>🔹 Teknologi</h3>
+                <ul>
+                    <li>PHP Native</li>
+                    <li>MySQL</li>
+                    <li>Bootstrap</li>
+                    <li>Chart.js</li>
+                </ul>
+
+                <h3>🔹 Fitur</h3>
+                <ul>
+                    <li>Dashboard grafik pelanggaran</li>
+                    <li>Manajemen data pelanggaran</li>
+                    <li>Rekap per siswa & per kelas</li>
+                    <li>Filter & pencarian data</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-section">
+            <h1 class="project-title">Aplikasi Absensi Berbasis QR Code</h1>
+            <img src="assets/img/work2.png" class="project-img" alt="">
+            <p class="project-desc">
+                Aplikasi ini di gunakan untuk mencatat kehadiran mahasiswa atau karyawan dengan scan QR Code
+            </p>
+
+            <div class="project-info">
+                <h3>🔹 Teknologi</h3>
+                <ul>
+                    <li>Flutter(dart)</li>
+                    <li>MongoDB</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>Geolocator Package</li>
+                </ul>
+
+                <h3>🔹 Fitur</h3>
+                <ul>
+                    <li>Dashboard interaktif</li>
+                    <li>Manajemen pelanggan</li>
+                    <li>Laporan layanan harian</li>
+                    <li>Monitoring request</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-section">
+            <h1 class="project-title">Sistem Pendukung Keputusan – Metode MOORA</h1>
+            <img src="assets/img/work3.png" class="project-img" alt="">
+            <p class="project-desc">
+                Aplikasi SPK dengan metode MOORA untuk menentukan penerima bantuan, dilengkapi 
+                penilaian kriteria, perankingan, dan hasil keputusan otomatis.
+            </p>
+
+            <div class="project-info">
+                <h3>🔹 Teknologi</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>Java Script</li>
+                    <li>MySQL</li>
+                    <li>Bootstrap</li>
+                </ul>
+
+                <h3>🔹 Fitur</h3>
+                <ul>
+                    <li>Input kriteria & bobot</li>
+                    <li>Perhitungan otomatis MOORA</li>
+                    <li>Peringkat hasil keputusan</li>
+                    <li>Dashboard penduduk</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-section">
+            <h1 class="project-title">Sistem Stok Barang</h1>
+            <img src="assets/img/detail4.png" class="project-img" alt="">
+            <p class="project-desc">
+                Sistem inventory sederhana untuk mengelola stok barang masuk dan keluar, 
+                lengkap dengan dashboard transaksi dan manajemen admin.
+            </p>
+
+            <div class="project-info">
+                <h3>🔹 Teknologi</h3>
+                <ul>
+                    <li>PHP Native</li>
+                    <li>JAVASCRIPT</li>
+                    <li>MySQL</li>
+                    <li>Bootstrap</li>
+                </ul>
+
+                <h3>🔹 Fitur</h3>
+                <ul>
+                    <li>Barang masuk & keluar</li>
+                    <li>Manajemen stok</li>
+                    <li>Manajemen admin</li>
+                    <li>Laporan stok</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BACK BUTTON -->
+        <a href="index.html#work" class="back-btn">← Back to Portfolio</a>
+
+    </div>
+
+</body>
+</html>
