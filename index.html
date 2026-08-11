@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portofolio Nizar, Web Developer yang berpengalaman dalam pengembangan aplikasi web dan mobile.">
+        <meta name="description" content="Portfolio of Nizar, a Web Developer experienced in web and mobile application development.">
+        <link rel="icon" type="image/png" href="assets/img/profil.png">
 
         <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -30,6 +31,10 @@
 
     .work__item {
         text-align: center;
+    }
+
+    .work__item--featured {
+        grid-column: 1 / -1;
     }
 
     .work__img {
@@ -65,7 +70,7 @@
 
     .work__link {
         font-size: 0.9rem;
-        color: #3b82f6;
+        color: var(--first-color);
         text-decoration: none;
         font-weight: 500;
     }
@@ -143,7 +148,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/about.jpg" alt="Foto Nizar">
                     </div>
                     
                     <div>
@@ -163,34 +168,44 @@
                         <p class="skills__text">I am an Information Systems graduate with experience in web application development, data management, and system operations.</p>
                         
                         <!-- Skills Cards -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-alt skills__icon'></i>
-                                <span class="skills__name">PHP & Laravel</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-data skills__icon'></i>
-                                <span class="skills__name">MySQL</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JavaScript / HTML / CSS</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-mobile skills__icon'></i>
-                                <span class="skills__name">Flutter</span>
-                            </div>
+                        <div class="skills__grid">
+                            <article class="skill-card" data-level="90">
+                                <div class="skill-card__head">
+                                    <span class="skill-card__icon"><i class='bx bx-code-alt'></i></span>
+                                    <span class="skill-card__name">PHP &amp; Laravel</span>
+                                    <span class="skill-card__level"></span>
+                                </div>
+                                <div class="skill-card__track"><span class="skill-card__bar" data-level="90"></span></div>
+                            </article>
+                            <article class="skill-card" data-level="88">
+                                <div class="skill-card__head">
+                                    <span class="skill-card__icon"><i class='bx bxs-data'></i></span>
+                                    <span class="skill-card__name">MySQL</span>
+                                    <span class="skill-card__level"></span>
+                                </div>
+                                <div class="skill-card__track"><span class="skill-card__bar" data-level="88"></span></div>
+                            </article>
+                            <article class="skill-card" data-level="82">
+                                <div class="skill-card__head">
+                                    <span class="skill-card__icon"><i class='bx bxl-javascript'></i></span>
+                                    <span class="skill-card__name">JavaScript / HTML / CSS</span>
+                                    <span class="skill-card__level"></span>
+                                </div>
+                                <div class="skill-card__track"><span class="skill-card__bar" data-level="82"></span></div>
+                            </article>
+                            <article class="skill-card" data-level="75">
+                                <div class="skill-card__head">
+                                    <span class="skill-card__icon"><i class='bx bx-mobile'></i></span>
+                                    <span class="skill-card__name">Flutter</span>
+                                    <span class="skill-card__level"></span>
+                                </div>
+                                <div class="skill-card__track"><span class="skill-card__bar" data-level="75"></span></div>
+                            </article>
                         </div>
                     </div>
                     
                     <div>              
-                        <img src="assets/img/skil.jpg" alt="" class="skills__img">
+                        <img src="assets/img/skil.jpg" alt="Ilustrasi keahlian" class="skills__img">
                     </div>
                 </div>
             </section>
@@ -200,10 +215,19 @@
 
     <div class="work__container">
 
+        <!-- Project 5 (Featured) -->
+        <div class="work__item work__item--featured">
+            <a href="project_details.html#project5" class="work__img">
+                <img src="assets/img/Screenshot%202026-06-11%20222741.png" alt="Sistem Informasi Kepegawaian (SIMPEG)">
+            </a>
+            <p class="work__title">Sistem Informasi Kepegawaian (SIMPEG)</p>
+            <a href="project_details.html#project5" class="work__link">View Details →</a>
+        </div>
+
         <!-- Project 1 -->
         <div class="work__item">
             <a href="project_details.html#project1" class="work__img">
-                <img src="assets/img/work1.jpeg" alt="">
+                <img src="assets/img/work1.jpeg" alt="E-Tata Tertib">
             </a>
             <p class="work__title">E-Tata Tertib</p>
             <a href="project_details.html#project1" class="work__link">View Details →</a>
@@ -212,7 +236,7 @@
         <!-- Project 2 -->
         <div class="work__item">
             <a href="project_details.html#project2" class="work__img">
-                <img src="assets/img/work2.png" alt="">
+                <img src="assets/img/work2.png" alt="Absensi QR Code">
             </a>
             <p class="work__title">Absensi QR Code</p>
             <a href="project_details.html#project2" class="work__link">View Details →</a>
@@ -221,7 +245,7 @@
         <!-- Project 3 -->
         <div class="work__item">
             <a href="project_details.html#project3" class="work__img">
-                <img src="assets/img/3.png" alt="">
+                <img src="assets/img/3.png" alt="SPK MOORA">
             </a>
             <p class="work__title">SPK MOORA</p>
             <a href="project_details.html#project3" class="work__link">View Details →</a>
@@ -230,27 +254,14 @@
         <!-- Project 4 -->
         <div class="work__item">
             <a href="project_details.html#project4" class="work__img">
-                <img src="assets/img/4.png" alt="">
+                <img src="assets/img/4.png" alt="Stok Barang">
             </a>
             <p class="work__title">Stok Barang</p>
             <a href="project_details.html#project4" class="work__link">View Details →</a>
         </div>
 
-        <!-- Project 5 -->
-        <div class="work__item">
-            <a href="project_details.html#project5" class="work__img">
-                <img src="assets/img/Screenshot%202026-06-11%20222741.png" alt="">
-            </a>
-            <p class="work__title">Sistem Informasi Kepegawaian (SIMPEG)</p>
-            <a href="project_details.html#project5" class="work__link">View Details →</a>
-        </div>
-
     </div>
 </section>
-
-
-
-            
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -281,7 +292,7 @@
                 <a href="https://www.linkedin.com/in/mohammadalvaruq" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://github.com/Nizaralvaruq" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            <p class="footer__copy">&#169; All rights reserved</p>
+            <p class="footer__copy">&#169; 2026 Nizar</p>
         </footer>
 
 

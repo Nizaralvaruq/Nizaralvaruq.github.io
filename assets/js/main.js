@@ -54,4 +54,28 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.skills__grid, .work__img, .contact__input',{interval: 200}); 
+
+/*===== SKILL BARS FILL ON SCROLL =====*/
+const skillsGrid = document.querySelector('.skills__grid')
+if (skillsGrid) {
+    const fillBars = () => {
+        skillsGrid.querySelectorAll('.skill-card').forEach(card => {
+            const bar = card.querySelector('.skill-card__bar')
+            if (bar) bar.style.width = bar.dataset.level + '%'
+        })
+    }
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    fillBars()
+                    io.disconnect()
+                }
+            })
+        }, { threshold: 0.2 })
+        io.observe(skillsGrid)
+    } else {
+        fillBars()
+    }
+} 
